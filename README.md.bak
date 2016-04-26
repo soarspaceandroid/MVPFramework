@@ -18,4 +18,4 @@ MVP 整合框架
 
 
 
-    顺便封装了状态机 , 整合了下拉刷新  BaseAdapterTool SwipeBackLayout
+    顺便封装了注册机 , 整合了下拉刷新  BaseAdapterTool SwipeBackLayout
