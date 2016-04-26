@@ -25,13 +25,12 @@ public class OkHttpFactory {
                     HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
                     interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
                     File cacheDir = new File(Config.CACHAE_DIR, Config.RESPONSE_CACHE);
-                    singleton = new OkHttpClient();
-                    OkHttpClient.Builder builder = singleton.newBuilder();
+                    OkHttpClient.Builder builder = new OkHttpClient.Builder();
                     builder.addNetworkInterceptor(interceptor)
                             .cache(new Cache(cacheDir, Config.RESPONSE_CACHE_SIZE))
                             .connectTimeout(Config.HTTP_CONNECT_TIMEOUT, TimeUnit.MILLISECONDS)
                             .readTimeout(Config.HTTP_READ_TIMEOUT, TimeUnit.MILLISECONDS);
-
+                    singleton = builder.build();
                 }
             }
         }
