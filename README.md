@@ -16,3 +16,7 @@ MVP 整合框架
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
     compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+
+
+
+    顺便封装了注册机 , 整合了下拉刷新  BaseAdapterTool SwipeBackLayout
