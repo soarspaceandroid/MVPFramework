@@ -1,0 +1,15 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.OtherActivity" parent="OtherActivityTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--额外的属性 为了响应 v-19-->
+    </style>
+
+    <style name="AppTheme.MainActivity" parent="MainActivityTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--额外的属性 为了响应 v-19-->
+    </style>
+    <!-- <item name="android:windowTranslucentNavigation">true</item>-->
+</resources>
